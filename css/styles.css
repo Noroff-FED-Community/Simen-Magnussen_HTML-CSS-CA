@@ -6,17 +6,25 @@
 header {
     display: flex;
     background-color: #16C61D;
-    width: 100%; height: 110px;
-    
+    width: 100%; min-height: 110px;
 }
 
-nav > ul > li {
-    display: inline-flex;
-    text-align: center;
-    padding-left: 50px;
-    color: #FFF;
-    text-decoration: none;
-    font-family: "Thuner","Kanit", Verdana, sans-serif;
+.nav-list {
+font-family: "Thuner", "Kanit", Verdana, sans-serif;
+background-color: #132747;
+display: flex;
+
+flex-wrap: wrap;
+flex-basis: 100%;
+gap: 1rem;
+margin: 0;
+padding: 0;
+list-style: none;
+}
+
+.nav-list li {
+    flex-shrink: 1;
+    flex-grow: 1;
 }
 
 .search {
@@ -27,22 +35,23 @@ nav > ul > li {
 
 .storebar > li {
     color: #FFF;
-    display: inline-flex;
-    padding-left: 50px; padding-top: 5px;
-    height: 25px;
+    display: flex;
+    align-items: center;
+    max-height: 25px;
     font-family: "Kanit", Verdana, sans-serif;
 }
 
 body {
     background-color: #132747;
-    
+    margin: 0;
+    overflow-y: scroll;
 }
 
 footer {
     display: flex;
     background-color: #2A323F;
     position: fixed; bottom: 0; left:0; 
-    width: 100%; height: 150px;
+    width: 100%; min-height: 150px;
     font-family: "Kanit", Verdana, sans-serif;
 }
 
@@ -55,4 +64,29 @@ h3 {
 
 .card {
     
+}
+
+p {
+    font-family: "Kanit", Verdana, sans-serif;
+    color: white;
+}
+
+.about {
+    text-align: center;
+    max-width: 700px;
+    margin-left: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF
+}
+
+a:hover, :focus {
+    color:#16C61D
+}
+
+img {
+    max-width: 475px;
+    max-height: 625px;
 }
