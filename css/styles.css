@@ -13,8 +13,9 @@ header {
 #logo {
     display: inline;
     position: relative;
-    max-width: 200px;
+    max-width: 150px;
     max-height: 100px;
+    margin-left: 50px;
 }
 
 .nav-list {
@@ -22,12 +23,13 @@ font-family: "Thuner", "Kanit", Verdana, sans-serif;
 background-color: #132747;
 display: grid;
 grid-template-columns: 1fr 1fr 1fr 1fr;
-gap: 4rem;
+gap: 30px;
 margin: 0 auto;
 padding: 0;
 list-style: none;
 position: relative;
 text-align: center;
+align-content: end;
 }
 
 .nav-list li {
@@ -39,8 +41,7 @@ text-align: center;
 .gray-bar {
     display: flex;
     background-color: #2A323F;
-    width: 70%;
-    justify-content: center;
+    text-align: left;
 }
 
 .store-bar > li {
@@ -55,7 +56,16 @@ body {
     background-color: #132747;
     margin: 0;
     overflow-y: scroll;
-    position: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0px;
+}
+
+main {
+    max-width:800px;
+    margin: 0 auto;
+    flex: 1;
 }
 
 footer {
@@ -65,10 +75,11 @@ footer {
     width: 100%; min-height: 150px;
     font-family: "Kanit", Verdana, sans-serif;
     justify-content: center;
+    margin-top: 20px;
 }
 
 .footer-contact {
-    position: relative;
+    align-items: left;
 }
 
 h1,
@@ -78,15 +89,43 @@ h3 {
     font-family: "Kanit", Verdana, sans-serif;
 }
 
-.card {
-    display: flex;
-    justify-content: center;
-    background-color: #2A323F; 
-    margin: 10px;
+h1 {
+    text-align: center;
 }
 
-.card-game-title {
-    position: relative;
+img {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    gap: 10px;
+    background-color: #2A323F; 
+}
+
+figure {
+    flex: 2;
+    margin: 0px;
+}
+
+.card-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-images {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 10px;
+}
+
+.card-price {
+    margin-right: 30px;
+    text-align: right;
+    color: #FFF;
+    font-family: 'Kanit', Verdana;
 }
 
 p {
@@ -96,10 +135,10 @@ p {
 
 
 .about {
-    text-align: center;
-    max-width: 700px;
-    margin-left: 100px;
+    align-items: center;
 }
+
+
 
 a {
     text-decoration: none;
@@ -114,23 +153,20 @@ a:active {
     color:#16C61D;
 }
 
-.store-page-pics {
-    max-width: 475px;
-    max-height: 625px;
-}
+
 
 .most-played {
 }
 
 .collection-games-pics {
-   max-width: 400px;
+   width: 100%;
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
    gap: 10px;
 }
 
 .collection-all-games-pics {
-    max-width: 200px;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 30px;
