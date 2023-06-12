@@ -18,6 +18,10 @@ header {
     
 }
 
+.logo {
+
+}
+
 .nav-list {
 font-family: "Thuner", "Kanit", Verdana, sans-serif;
 font-size: x-large;
@@ -55,9 +59,11 @@ flex: 1;
 .search {
     display: flex;
     align-self: center;
+    justify-content: 
+    position: relative;
     font-family: "Kanit", Verdana, sans-serif ;
     max-height: 25px;
-    margin-left: 300px;
+    
 }
 
 .store-bar li {
