@@ -32,9 +32,8 @@ padding: 0;
 list-style: none;
 text-align: center;
 align-items: flex-end;
-max-width:1200px;
+max-width: 1200px;
 flex: 1;
-
 }
 
 .nav-list a {
@@ -45,11 +44,16 @@ flex: 1;
 
 .gray-bar {
     display: flex;
+    flex: 1;
     background-color: #2A323F;
     text-align: left;
     margin-top: 30px;
     margin-bottom: 20px;
     padding: 0;
+}
+
+.all-games {
+
 }
 
 .all-games-h {
@@ -59,16 +63,23 @@ flex: 1;
 .search {
     display: flex;
     align-self: center;
-    justify-content: 
-    position: relative;
+    justify-content: end;
+    
     font-family: "Kanit", Verdana, sans-serif ;
     max-height: 25px;
-    
+}
+
+.store-bar {
+    display: flex;
+    flex: 1;
+    padding-left: 10px;
+    max-height: 25px;
+    font-family: "Kanit", Verdana, sans-serif;
 }
 
 .store-bar li {
     color: #FFF;
-    display: inline-flex;
+    display: flex;
     padding-left: 10px;
     max-height: 25px;
     font-family: "Kanit", Verdana, sans-serif;
@@ -85,7 +96,7 @@ body {
 
 main {
     background-color: #132747;
-    max-width:1000px;
+    max-width: 1000px;
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
@@ -223,4 +234,18 @@ a:active {
 
 .contact-icons {
     
+}
+
+.product-page-pics {
+    margin-top: 20px;
+    display: flex;
+    flex: 1;
+    gap: 10px;
+    width: 100%;
+}
+
+.product-page-pics img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
 }
