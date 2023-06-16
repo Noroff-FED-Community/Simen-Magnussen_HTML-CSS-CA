@@ -35,6 +35,7 @@ flex: 1;
 }
 
 .nav-list a {
+    font-family: "Thuner", "Kanit", Verdana, sans-serif;
     flex-shrink: 1;
     flex-grow: 1;
     border: 2px solid black;
