@@ -112,11 +112,17 @@ main {
     background-color: #132747;
     max-width: 1000px;
     margin: 0 auto;
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 10%;
+    padding-right: 10%;
     padding-bottom: 250px;
     flex: 1;
 }
+/* @media (580px) {
+    main {
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+} */
 
 footer {
     background-color: #2A323F;
