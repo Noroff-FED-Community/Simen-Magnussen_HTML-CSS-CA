@@ -5,9 +5,8 @@
 
 header {
     background-color: #16C61D;
-    background-image: <bg-image ="images/GameHub_Logo.png">;
-    width: 100%; min-height: 110px;
-    
+    background-image: "images/GameHub_Logo.png";
+    width: 100%; min-height: 110px;  
 }
 
 #logo {
@@ -15,9 +14,6 @@ header {
     max-height: 100px;
     margin-left: 50px;
     margin-top: 50px;
-}
-
-.logo {
 }
 
 .nav-list {
@@ -34,6 +30,19 @@ max-width: 1200px;
 flex: 1;
 flex-wrap: wrap;
 }
+@media (max-width: 650px) {
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .nav-list a {
+        border-top: 2px solid black;
+        border-bottom: 2px solid black;
+        border-left: none;
+        border-right: none;
+    }
+}
 
 .nav-list a {
     font-family: "Thuner", "Kanit", Verdana, sans-serif;
@@ -42,6 +51,7 @@ flex-wrap: wrap;
     border: 2px solid black;
     text-transform: uppercase;
 }
+
 
 .gray-bar {
     display: flex;
@@ -158,6 +168,20 @@ img {
     background-color: #2A323F; 
     margin-bottom: 100px;
     flex-wrap: wrap;
+}
+@media (max-width: 800px) {
+    .card {
+        flex-direction: column;
+    }
+    .gray-bar {
+        flex-wrap: wrap;
+    }
+}
+@media (max-width: 500px) {
+    .main {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
 }
 
 .favourites {
