@@ -125,7 +125,7 @@ main {
 }
 @media (max-width: 1220px) {
     main {
-        max-width: fit-content;
+        width: fit-content;
     }
 }
 
